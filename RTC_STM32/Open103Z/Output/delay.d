@@ -1,0 +1,14 @@
+..\..\output\delay.o: ..\..\User\usart\delay.c
+..\..\output\delay.o: ..\..\User\usart\delay.h
+..\..\output\delay.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\delay.o: ..\..\Libraries\CMSIS\core_cm3.h
+..\..\output\delay.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\delay.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+..\..\output\delay.o: ..\..\User\stm32f10x_conf.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\stm32f10x_exti.h
+..\..\output\delay.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\stm32f10x_spi.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+..\..\output\delay.o: ..\..\Libraries\FWlib\inc\misc.h
