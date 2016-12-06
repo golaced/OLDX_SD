@@ -529,6 +529,8 @@ switch (state)
 		ch[cnt_++]=fly_controller.gps.spd;
 		ch[cnt_++]=fly_controller.gps.angle;
 		ch[cnt_++]=fly_controller.gps.yaw;
+		ch[cnt_++]=fly_controller.gps.star_num;
+		ch[cnt_++]=fly_controller.gps.svnum;
 		sd_write(ch,"gps.txt", index, t_now,cnt_,7);cnt_=0;
 //		
 //	 sd_write(ch,"baro_sensor.txt", index, t_now,4,3);
