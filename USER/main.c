@@ -519,19 +519,45 @@ switch (state)
 //	 sd_write(ch,"flow_sensor.txt", index, t_now,cnt_,3);cnt_=0;
 //GPS
 	 
-	  ch[cnt_++]=flow_matlab_data[0];
-		ch[cnt_++]=flow_matlab_data[1];
-		ch[cnt_++]=flow_matlab_data[2];
-		ch[cnt_++]=flow_matlab_data[3];
-		ch[cnt_++]=(float)fly_controller.gps.J/10000000.;	
-		ch[cnt_++]=(float)fly_controller.gps.W/10000000.;			
-		ch[cnt_++]=fly_controller.gps.gps_mode;
-		ch[cnt_++]=fly_controller.gps.spd;
-		ch[cnt_++]=fly_controller.gps.angle;
-		ch[cnt_++]=fly_controller.gps.yaw;
-		ch[cnt_++]=fly_controller.gps.star_num;
-		ch[cnt_++]=fly_controller.gps.svnum;
-		sd_write(ch,"gps.txt", index, t_now,cnt_,7);cnt_=0;
+//	  ch[cnt_++]=flow_matlab_data[0];
+//		ch[cnt_++]=flow_matlab_data[1];
+//		ch[cnt_++]=flow_matlab_data[2];
+//		ch[cnt_++]=flow_matlab_data[3];
+//		ch[cnt_++]=(float)fly_controller.gps.J/10000000.;	
+//		ch[cnt_++]=(float)fly_controller.gps.W/10000000.;			
+//		ch[cnt_++]=fly_controller.gps.gps_mode;
+//		ch[cnt_++]=fly_controller.gps.spd;
+//		ch[cnt_++]=fly_controller.gps.angle;
+//		ch[cnt_++]=fly_controller.gps.yaw;
+//		ch[cnt_++]=fly_controller.gps.star_num;
+//		ch[cnt_++]=fly_controller.gps.svnum;
+//		sd_write(ch,"gps.txt", index, t_now,cnt_,7);cnt_=0;
+//		
+//		
+//		ch[cnt_++]=qr_matlab_data[0];
+//		ch[cnt_++]=qr_matlab_data[1];
+//		ch[cnt_++]=qr_matlab_data[2];
+//		ch[cnt_++]=fly_controller.now.alt_fushion_sonar;
+//		sd_write(ch,"bai.txt", index, t_now,cnt_,7);cnt_=0;
+// HML YAW_CAL
+	  ch[cnt_++]=fly_controller.imu.roll;
+		ch[cnt_++]=fly_controller.imu.pitch;
+		ch[cnt_++]=fly_controller.imu.yaw;
+		
+		ch[cnt_++]=fly_controller.sensor.hmx_c;
+		ch[cnt_++]=fly_controller.sensor.hmy_c;
+		ch[cnt_++]=fly_controller.sensor.hmz_c;
+		ch[cnt_++]=fly_controller.imu.acc_x;
+		ch[cnt_++]=fly_controller.imu.acc_y;
+		ch[cnt_++]=fly_controller.imu.acc_z;
+		sd_write(ch,"hml_yaw.txt", index, t_now,cnt_,2);cnt_=0;
+		
+		
+//		ch[cnt_++]=qr_matlab_data[0];
+//		ch[cnt_++]=qr_matlab_data[1];
+//		ch[cnt_++]=qr_matlab_data[2];
+//		ch[cnt_++]=fly_controller.now.alt_fushion_sonar;
+//		sd_write(ch,"bai.txt", index, t_now,cnt_,7);cnt_=0;
 //		
 //	 sd_write(ch,"baro_sensor.txt", index, t_now,4,3);
 	 
